@@ -1,0 +1,13 @@
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//@inlcude mixin.flex-center;
+
+@mixin font-gray{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+//@inlcude mixin.font-gray;
