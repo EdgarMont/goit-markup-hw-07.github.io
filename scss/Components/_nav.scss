@@ -1,3 +1,4 @@
+
 .header {
   display: flex;
   align-items: center;
@@ -106,7 +107,7 @@
     padding-left: 7px;
     padding-right: 30px;
 
-    @include mixin.font-gray;
+    @include font-gray;
   }
   &_emailText:hover,
   &_emailText:focus{
@@ -130,7 +131,7 @@
     text-decoration: none;
     padding: 1px 15px 1px 1px;
 
-    @include mixin.font-gray;
+    @include font-gray;
   }
   &_phoneText:hover &_icon{
     fill: $color1;

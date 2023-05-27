@@ -1,9 +1,9 @@
-@use 'normalize';
-@use 'variables';
-@use 'mixin';
-@use 'nav';
-@use 'footer';
-@use 'portfolio';
+@import "./Components/normalize";
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./Components/nav";
+@import "./Components/footer";
+@import "./Components/portfolio";
 
 .backdrop{
   position: fixed;
@@ -16,7 +16,7 @@
   z-index: 10;
   transition: opacity .2s cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include mixin.flex-center;
+  @include flex-center;
   
 }
 .backdrop.is-hidden {
@@ -63,7 +63,7 @@
   border: 1px solid #00000010;
   border-radius: 100%;
   
-  @include mixin.flex-center;
+  @include flex-center;
 }
 .iconClose{
   display: flex;
@@ -160,7 +160,7 @@
   width: 448px;
   height: 40px;
 
-  @include mixin.font-gray;
+  @include font-gray;
 }
 .inputCheckbox{
   height: auto;
@@ -175,13 +175,13 @@
   margin-right: 10px;
   cursor: pointer;
 
-  @include mixin.flex-center;
+  @include flex-center;
 }
 .textCheckbox{
   width: 400px;
   line-height: 24px;
 
-  @include mixin.font-gray;
+  @include font-gray;
 }
 .buttonFormCloseSend{
   display: flex;
@@ -283,7 +283,7 @@
     line-height: 1.7;
     width: 270px;
 
-    @include mixin.font-gray;
+    @include font-gray;
   }
 }
 
@@ -443,7 +443,7 @@
   height: 44px;
   background-color: #fff;
 
-  @include mixin.flex-center;
+  @include flex-center;
 }
 .socialNets_iconNets{
   width: 20px;
@@ -460,6 +460,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 .clientblock{
   display: flex;
