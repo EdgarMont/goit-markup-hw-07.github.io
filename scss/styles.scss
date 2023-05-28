@@ -5,6 +5,13 @@
 @import "./Components/footer";
 @import "./Components/portfolio";
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  max-width: 100%;
+}
 .backdrop{
   position: fixed;
   top: 0;
@@ -210,6 +217,8 @@
 .section{
   padding-top: 94px;
   padding-bottom: 94px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 .solutionsButton {
   display: grid;
@@ -380,7 +389,7 @@
   line-height: auto;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: $color4;
+  color: $color2;
   text-align: center;
   width: 100%;
   padding-top: 35px;
@@ -460,11 +469,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
   
 }
 .clientblock{
   display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
   margin: 15px;
+}
+.svgBrand{
+  
+  width: 170px;
+  height: 81px;
 }
 .iconBrand{
   width: 170px;
@@ -504,4 +522,10 @@
     padding: 1px 1px 120px 200px;
   }
   
+}
+
+@media (min-width: 768px) {
+  .dedication {
+    display: none;
+  }
 }

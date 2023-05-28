@@ -21,28 +21,40 @@
     <!--Block-->
     <!--Elemento-->
     <!--Modificador-->
-    <header class="header"> 
+    <header class="header">
       <div class="header_border container">
         <a class="WebStudio">WebStudio</a>
+        <div class="navBlock">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
 
         <nav class="nav">
           <h3>
-            <a 
-              class="nav_current"
-              href="./index.html">Estudio 
-            </a>
+            <a class="nav_current" href="./index.html">Estudio </a>
           </h3>
           <h3>
-            <a 
-              class="nav_site"
-              href="./portfolio.html">Portafolio 
-            </a>
+            <a class="nav_site" href="./portfolio.html">Portafolio </a>
           </h3>
           <h3>
-            <a 
-              class="nav_site" 
-              href="./contact.html">Contacto 
-            </a>
+            <a class="nav_site" href="./contact.html">Contacto </a>
           </h3>
         </nav>
         <div class="navTwo">
@@ -61,6 +73,38 @@
             >
           </div>
         </div>
+
+        <div class="menu-navBlock js-menu-navBlock" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li><a href="" class="link">Estudio </a></li>
+            <li><a href="" class="link">Portafolio </a></li>
+            <li><a href="" class="link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
       </div>
     </header>
 
@@ -279,6 +323,7 @@
 
       <section class="team">
         <div class="container"> 
+        
           <h4 class="title1">Nuestro Equipo</h4> 
           <ul class="imageTeam"> 
             <li class="imageTeam1">
@@ -464,42 +509,42 @@
           
           <li class="clientblock">
             <a class="iconBrand" href="#">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand1"></use>
               </svg>
             </a>
           </li>
           <li class="clientblock">
             <a href="#" class="iconBrand">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand2"></use>
               </svg>
             </a>
           </li>
           <li class="clientblock">
             <a href="#" class="iconBrand">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand3"></use>
               </svg>
             </a>
           </li>
           <li class="clientblock">
             <a href="#" class="iconBrand">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand4"></use>
               </svg>
             </a>
           </li>
           <li class="clientblock">
             <a href="#" class="iconBrand">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand5"></use>
               </svg>
             </a>
           </li>
           <li class="clientblock">
             <a href="#" class="iconBrand">
-              <svg>
+              <svg class="svgBrand">
                 <use href="../images/sprite.svg#brand6"></use>
               </svg>
             </a>
@@ -508,11 +553,11 @@
       </section>
     </main>
 
-   <footer class="footer">
+    <footer class="footer">
       <script src="../javascript/modal.js"></script>
       <div class="containerFooter">
         <div class="footerBox">
-          <ul >
+          <ul>
             <li>
               <a class="WebStudio">WebStudio</a>
             </li>
@@ -536,28 +581,28 @@
             <h3 class="titleNets">ENCUENTRENOS EN</h3>
             <ul class="socialNets1">
               <li>
-                <button type="button" class="buttonNets"> 
+                <button type="button" class="buttonNets">
                   <svg class="socialNets_iconNets">
                     <use href="../images/sprite.svg#instagram"></use>
                   </svg>
                 </button>
               </li>
               <li>
-                <button type="button" class="buttonNets"> 
+                <button type="button" class="buttonNets">
                   <svg class="socialNets_iconNets">
                     <use href="../images/sprite.svg#twitter"></use>
                   </svg>
                 </button>
               </li>
               <li>
-                <button type="button" class="buttonNets"> 
+                <button type="button" class="buttonNets">
                   <svg class="socialNets_iconNets">
                     <use href="../images/sprite.svg#facebook"></use>
                   </svg>
                 </button>
               </li>
               <li>
-                <button type="button" class="buttonNets"> 
+                <button type="button" class="buttonNets">
                   <svg class="socialNets_iconNets">
                     <use href="../images/sprite.svg#linkedin"></use>
                   </svg>
@@ -573,13 +618,11 @@
               type="Correo electrónico"
               placeholder="Correo electrónico"
             />
-           
+
             <button type="button" class="buttonSub">
               Suscríbase
               <svg class="iconSend">
-                <use
-                  href="../images/sprite.svg#send"
-                ></use>
+                <use href="../images/sprite.svg#send"></use>
               </svg>
             </button>
           </div>
